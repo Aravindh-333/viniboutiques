@@ -1,0 +1,153 @@
+/* ════════════════════════════════════════
+   base.css
+   Global styles, color variables, typography
+   ✏️ CHANGE: Colors here to match your brand
+   ════════════════════════════════════════ */
+
+/* ── COLOR VARIABLES ─────────────────
+   Change these to update the whole site's colors */
+:root {
+  --rose:   #C0566A;    /* ✏️ Main pink/rose color */
+  --rose-d: #8B3347;    /* ✏️ Darker rose (hover states) */
+  --rose-l: #F5E6EA;    /* ✏️ Light rose (backgrounds) */
+  --gold:   #C9A84C;    /* ✏️ Gold accent color */
+  --gold-l: #F5ECD5;    /* ✏️ Light gold (backgrounds) */
+  --ivory:  #FDF7F0;    /* ✏️ Page background */
+  --cream:  #F7EEE4;    /* ✏️ Alternate section background */
+  --ink:    #2C1A22;    /* ✏️ Main text color */
+  --muted:  #7A5C65;    /* ✏️ Secondary text color */
+  --white:  #FFFDF9;    /* ✏️ Card/form background */
+  --border: rgba(192,86,106,0.18); /* ✏️ Border color */
+}
+
+/* ── RESET ─────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── BODY ──────────────────────────── */
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--ivory);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ── HEADINGS ──────────────────────── */
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.2;
+}
+
+/* ── IMAGES ────────────────────────── */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── COMMON BUTTONS ────────────────── */
+.btn-primary {
+  background: var(--rose);
+  color: #fff;
+  padding: 13px 30px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--rose-d); }
+
+.btn-full { width: 100%; padding: 15px; font-size: 14px; text-align: center; }
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: #25D366;
+  color: #fff;
+  padding: 13px 24px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btn-wa:hover { background: #1da855; }
+
+.wa-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 14px 28px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+.wa-button:hover { background: #1da855; }
+
+/* ── SECTION COMMONS ───────────────── */
+.section {
+  padding: 90px 8vw;
+}
+.section-alt {
+  background: var(--cream);
+}
+
+.section-header {
+  margin-bottom: 52px;
+}
+.section-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+  margin-bottom: 14px;
+}
+.section-title {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 300;
+  color: var(--rose-d);
+  line-height: 1.1;
+}
+.section-title em {
+  font-style: italic;
+  color: var(--rose);
+}
+.section-desc {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 520px;
+  margin-top: 12px;
+}

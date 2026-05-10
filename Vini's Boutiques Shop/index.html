@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- CHANGE: Page title shown on browser tab -->
+  <title>Vini's Boutique — Fine Women's Tailoring, Hosur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR — CHANGE: shop name -->
+<nav id="navbar">
+  <a class="nav-logo" href="#home">Vini's <span>Boutique</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#order">Book Now</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#order">Order Now</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#order" onclick="closeMenu()">Book Now</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ══ HERO — CHANGE: tag, heading, subtitle, stats, WhatsApp number ══ -->
+<section id="home">
+  <div class="hero-text">
+
+    <!-- CHANGE: small tag above heading -->
+    <span class="hero-tag">Hosur's Finest Women's Tailoring</span>
+    <!-- CHANGE: main big heading (3 lines) -->
+    <h1 class="hero-title">Crafted<br/><em>with Love,</em><br/>Worn with Pride</h1>
+    <!-- CHANGE: subtitle text -->
+    <p class="hero-sub">Exquisite blouse stitching, Aari embroidery, and saree work — handcrafted to celebrate every woman's elegance in Hosur.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="#order">Book Appointment</a>
+      <!-- CHANGE: Replace 919876543210 with your WhatsApp number (91 + 10 digits, no spaces) -->
+      <a class="btn-wa" href="https://wa.me/91+9566334850?text=Hi%20I'm%20interested%20in%20stitching%20at%20Vini's%20Boutique" target="_blank">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <!-- CHANGE: your 3 stats -->
+    <div class="hero-stats">
+      <div><div class="stat-n">500+</div><div class="stat-l">Happy Clients</div></div>
+      <div><div class="stat-n">8+</div><div class="stat-l">Years Experience</div></div>
+      <div><div class="stat-n">1200+</div><div class="stat-l">Designs Stitched</div></div>
+    </div>
+  </div>
+  <!-- HERO PHOTOS — put photos in images/hero/ folder and use filenames below -->
+  <div class="hero-visual">
+    <div class="hero-img-grid">
+      <div class="hero-img-cell">
+        <!-- CHANGE src: your photo filename -->
+        <img src="images/hero/aari work 1.png " alt="Aari work"/>
+        <div class="img-label">Aari Work</div>
+      </div>
+      <div class="hero-img-cell">
+        <!-- CHANGE src: your photo filename -->
+        <img src="images/hero/blows.jpg" alt="Blouse stitching"/>
+        <div class="img-label">Blouse</div>
+      </div>
+      <div class="hero-img-cell">
+        <!-- CHANGE src: your photo filename -->
+        <img src="images/hero/embryode.JPG" alt="Embroidery"/>
+        <div class="img-label">Embroidery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES — CHANGE: name, description, price for each card ══ -->
+<section id="services" class="section">
+  <div class="section-header">
+    <span class="section-tag">Our Specialities</span>
+    <h2 class="section-title">Crafts We <em>Excel</em> In</h2>
+    <p class="section-desc">Every stitch is a labour of love. We offer premium women's tailoring services, each with meticulous attention to detail.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <!-- To add a photo: <img class="service-photo" src="images/services/blouse.jpg" alt="Blouse"/> -->
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8 Q24 4 34 8 L38 36 Q30 42 24 43 Q18 42 10 36 Z"/><path d="M18 18 Q24 14 30 18"/><circle cx="24" cy="26" r="5"/><path d="M19 31 Q22 36 24 37 Q26 36 29 31"/></svg>
+      <div class="service-name">Blouse Stitching</div>  <!-- CHANGE -->
+      <div class="service-desc">Custom-fit blouses for every saree — cotton, silk, designer and bridal. Padded, zipped, or knotted styles.</div>  <!-- CHANGE -->
+      <div class="service-price">From ₹350 onwards</div>  <!-- CHANGE -->
+    </div>
+
+    <div class="service-card">
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="3"/><path d="M10,24 L14,24 M34,24 L38,24 M24,10 L24,14 M24,34 L24,38"/><path d="M14.1,14.1 L17,17 M31,31 L33.9,33.9 M33.9,14.1 L31,17 M17,31 L14.1,33.9"/></svg>
+      <div class="service-name">Aari Work</div>  <!-- CHANGE -->
+      <div class="service-desc">Traditional South Indian Aari embroidery with zardozi thread, beads and mirrors. Bridal-wear specialists.</div>  <!-- CHANGE -->
+      <div class="service-price">From ₹800 onwards</div>  <!-- CHANGE -->
+    </div>
+
+    <div class="service-card">
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="32" height="32" rx="2"/><rect x="14" y="14" width="20" height="20" rx="1"/><path d="M20 24 Q24 18 28 24 Q24 30 20 24"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="32" cy="16" r="2" fill="currentColor"/><circle cx="16" cy="32" r="2" fill="currentColor"/><circle cx="32" cy="32" r="2" fill="currentColor"/></svg>
+      <div class="service-name">Embroidery</div>  <!-- CHANGE -->
+      <div class="service-desc">Hand and machine embroidery — kashmiri, cross-stitch, thread and bead work on dupatta, saree borders and kurtis.</div>  <!-- CHANGE -->
+      <div class="service-price">From ₹500 onwards</div>  <!-- CHANGE -->
+    </div>
+
+    <div class="service-card">
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 16 Q12 8 20 8 L28 8 Q36 8 40 16 L42 32 Q38 40 24 42 Q10 40 6 32 Z"/><path d="M14 18 Q24 12 34 18"/><path d="M10 28 Q24 36 38 28"/><path d="M24 8 L24 42"/></svg>
+      <div class="service-name">Saree Fall &amp; Alterations</div>  <!-- CHANGE -->
+      <div class="service-desc">Saree fall stitching, pico edging, blouse alterations, and full-length saree work. Perfect finishing every time.</div>  <!-- CHANGE -->
+      <div class="service-price">From ₹150 onwards</div>  <!-- CHANGE -->
+    </div>
+
+    <div class="service-card">
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 6 L32 6 L40 24 L32 42 L16 42 L8 24 Z"/><path d="M20 6 L20 42 M28 6 L28 42"/><path d="M12 16 L36 16 M10 24 L38 24 M12 32 L36 32"/><circle cx="24" cy="24" r="4"/></svg>
+      <div class="service-name">Bridal Wear</div>  <!-- CHANGE -->
+      <div class="service-desc">Complete bridal trousseau tailoring — reception blouses, kanjeevaram blouses, lehenga blouses with heavy embellishments.</div>  <!-- CHANGE -->
+      <div class="service-price">Custom Quote</div>  <!-- CHANGE -->
+    </div>
+
+    <div class="service-card">
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="10" y="10" width="28" height="36" rx="2"/><path d="M16 18 L32 18 M16 24 L28 24 M16 30 L24 30"/><circle cx="34" cy="34" r="8" fill="var(--ivory)" stroke="currentColor"/><path d="M31 34 L33 36 L37 32"/></svg>
+      <div class="service-name">Custom Kurtis &amp; Churidar</div>  <!-- CHANGE -->
+      <div class="service-desc">Designer kurtis, churidar suits, anarkali and salwar stitching with your choice of neck and sleeve designs.</div>  <!-- CHANGE -->
+      <div class="service-price">From ₹450 onwards</div>  <!-- CHANGE -->
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ GALLERY — CHANGE: image src paths and caption text ══ -->
+<section id="gallery" class="section section-alt">
+  <div class="section-header">
+    <span class="section-tag">Our Work</span>
+    <h2 class="section-title">A Glimpse of <em>Our Craft</em></h2>
+    <p class="section-desc">Browse through our portfolio of handcrafted works — each piece tells a story of skill and dedication.</p>
+  </div>
+  <div class="gallery-grid">
+
+    <!-- Photo 1: TALL (big left, spans 2 rows) — CHANGE src and caption -->
+    <div class="g-item g-tall">
+      <img src="images/gallery/Aari work.jpg" alt="Aari work bridal blouse"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Aari Blouse — Heavy embroidery with zardozi</div></div>
+    </div>
+
+    <!-- Photo 2 — CHANGE src and caption -->
+    <div class="g-item">
+      <img src="images/gallery/designer blows.jpg" alt="Designer blouse"/>
+      <div class="g-overlay"><div class="g-caption"> Embroidery saree blouse</div></div>
+    </div>
+
+    <!-- Photo 3 — CHANGE src and caption -->
+    <div class="g-item">
+      <img src="images/gallery/Embryode.jpg" alt="Embroidery work"/>
+      <div class="g-overlay"><div class="g-caption">Designer silk blouse </div></div>
+    </div>
+
+    <!-- Photo 4: WIDE (spans 2 columns) — CHANGE src and caption -->
+    <div class="g-item g-wide">
+      <img src="images/gallery/saree.jpg" alt="Saree border embroidery"/>
+      <div class="g-overlay"><div class="g-caption">Handcrafted saree border with kashmiri motifs</div></div>
+    </div>
+
+    <!-- Photo 5 — CHANGE src and caption -->
+    <div class="g-item">
+      <img src="images/gallery/bridal.jpg" alt="Bridal wear"/>
+      <div class="g-overlay"><div class="g-caption">Designer churidar with zari</div></div>
+    </div>
+
+    <!-- Photo 6 — CHANGE src and caption -->
+    <div class="g-item">
+      <img src="images/gallery/chudithar.jpg" alt="Churidar set"/>
+      <div class="g-overlay"><div class="g-caption">Hand embroidered dupatta with phulkari</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 1.jpeg" alt="Blowse work"/>
+      <div class="g-overlay"><div class="g-caption"> Bridal Blouse </div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 2.jpeg" alt="Blowse work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse </div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 3.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 4.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 5.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 6.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 7.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 8.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 9.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 10.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 11.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/dress 1.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Saree Alternate Dress</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/dress 2.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Saree alternate Dress</div></div>
+    </div>
+
+    <div class="g-item g-tall">
+      <img src="images/gallery/blows 3.jpeg"alt=" blouse Work"/>
+      <div class="g-overlay"><div class="g-caption">Bridal Blouse</div></div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<!-- ══ ABOUT — CHANGE: owner photo, name, story text ══ -->
+<section id="about" class="section">
+  <div class="about-grid">
+    <div class="about-img">
+      <!-- CHANGE src: put your photo in images/about/owner.jpg -->
+      <img src="images/about/owner.png" alt="Nithya Kumar — Owner"/>
+      <!-- CHANGE: your years of experience -->
+      <div class="about-badge">
+        <span class="about-badge-n">4+</span>
+        <span class="about-badge-l">Years of Craft</span>
+      </div>
+    </div>
+    <div>
+      <span class="section-tag">Our Story</span>
+      <h2 class="section-title">Stitched with <em>Passion</em></h2>
+      <!-- CHANGE: your shop story -->
+      <p class="about-text-body" style="margin-top:18px">
+        Vini's Boutique was born out of a deep love for South Indian textile artistry.
+        Founded in Hosur by master tailor <strong>Nithya Kumar</strong>, our boutique has spent
+        over 4 years transforming fabric into wearable art — one stitch at a time.
+      </p>
+      <p class="about-text-body" style="margin-top:14px">
+        From intricate Aari work passed down through generations to contemporary designer blouses,
+        we blend tradition with modern elegance. Every customer who walks through our door leaves
+        wearing confidence.
+      </p>
+      <!-- CHANGE: your 5 unique selling points -->
+      <ul class="about-list">
+        <li><strong>Hosur's Most Trusted</strong> — Serving 500+ happy clients across Hosur and beyond</li>
+        <li><strong>Custom Fit Guaranteed</strong> — We take precise measurements for the perfect silhouette</li>
+        <li><strong>Premium Materials</strong> — Only the finest threads, beads, and fabrics</li>
+        <li><strong>Ready in Time</strong> — We honour every delivery commitment, especially for weddings</li>
+        <li><strong>WhatsApp Orders</strong> — Easy booking, tracking updates and design consultation online</li>
+      </ul>
+      <a class="btn-primary" href="#contact" style="margin-top:28px;display:inline-block">Visit Our Shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS — CHANGE: reviews, customer names, locations ══ -->
+<section class="testimonials">
+  <div class="section-header">
+    <span class="section-tag">Customer Love</span>
+    <h2 class="section-title">What Our Clients <em>Say</em></h2>
+  </div>
+  <div class="testi-grid">
+    <!-- REVIEW 1 — CHANGE all text -->
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"My bridal blouse was absolutely breathtaking. The Aari work was so intricate and detailed — exactly like the reference image I brought. Nithya akka has golden hands!"</div>
+      <div class="testi-name">Kavitha R.</div>
+      <div class="testi-loc">Hosur, Tamil Nadu</div>
+    </div>
+    <!-- REVIEW 2 — CHANGE all text -->
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"I've been coming here for 4 years. Every blouse fits perfectly and is ready on time. The embroidery on my daughter's pavadai was gorgeous — everyone asked where I got it stitched!"</div>
+      <div class="testi-name">Seetha Lakshmi</div>
+      <div class="testi-loc">Hosur, Tamil Nadu</div>
+    </div>
+    <!-- REVIEW 3 — CHANGE all text -->
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">"Booked via WhatsApp and the experience was seamless. Sent my design photo, got measurements taken, and the silk blouse came out better than I imagined. Worth every rupee!"</div>
+      <div class="testi-name">Meena Devi</div>
+      <div class="testi-loc">Hosur, Tamil Nadu/div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ORDER FORM — WhatsApp number is in js/main.js (top of file) ══ -->
+<section id="order" class="section section-alt">
+  <div class="section-header">
+    <span class="section-tag">Book Your Order</span>
+    <h2 class="section-title">Place Your <em>Order</em></h2>
+    <p class="section-desc">Fill in the form below and we'll confirm your appointment within 24 hours via WhatsApp.</p>
+  </div>
+  <div class="order-wrap">
+    <div>
+      <div class="order-info-box">
+        <h3>How It Works</h3>
+        <p style="font-size:14px;color:var(--muted)">Simple 4-step process to get your dream outfit stitched.</p>
+        <ol class="order-steps">
+          <li><span class="step-num">1</span><div><strong>Book Online</strong> — Fill this form or WhatsApp us with your design photo.</div></li>
+          <li><span class="step-num">2</span><div><strong>Visit for Measurements</strong> — Come to our shop or share measurement chart via WhatsApp.</div></li>
+          <li><span class="step-num">3</span><div><strong>We Craft It</strong> — Our skilled team brings your vision to life with care.</div></li>
+          <li><span class="step-num">4</span><div><strong>Delivery / Pickup</strong> — Collect from our shop or get home delivery within Hosur.</div></li>
+        </ol>
+      </div>
+      <div style="margin-top:28px;padding:24px;background:var(--white);border:1px solid var(--border)">
+        <h4 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--rose-d);margin-bottom:12px">Quick WhatsApp Order</h4>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Prefer a faster route? Tap below to start a WhatsApp chat with us directly!</p>
+        <a class="wa-button" href="https://wa.me/919566334850?text=Hi%20Vini's%20Boutique!%20I'd%20like%20to%20place%20an%20order." target="_blank">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+    <form class="form" onsubmit="handleOrder(event)">
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" id="fname" placeholder="Your name" required/></div>
+        <div class="form-group"><label>Phone / WhatsApp *</label><input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX" required/></div>
+      </div>
+      <!-- CHANGE: Add or remove service options -->
+      <div class="form-group">
+        <label>Service Required *</label>
+        <select id="fservice" required>
+          <option value="">— Select a service —</option>
+          <option>Blouse Stitching</option>
+          <option>Aari Work</option>
+          <option>Embroidery</option>
+          <option>Saree Fall &amp; Alterations</option>
+          <option>Bridal Wear</option>
+          <option>Churidar / Kurti Stitching</option>
+          <option>Other / Multiple Services</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Fabric Type</label>
+          <select id="ffabric">
+            <option value="">— Select fabric —</option>
+            <option>Cotton</option><option>Silk / Kanjivaram</option>
+            <option>Chiffon / Georgette</option><option>Net / Lace</option>
+            <option>Organza</option><option>I'll bring my fabric</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Delivery Date Needed</label><input type="date" id="fdate"/></div>
+      </div>
+      <div class="form-group"><label>Neck &amp; Sleeve Design Preference</label><input type="text" id="fdesign" placeholder="e.g. Boat neck, full sleeve, back open"/></div>
+      <div class="form-group"><label>Additional Notes / Special Requests</label><textarea id="fnotes" placeholder="Describe your design, size, or any special instructions..."></textarea></div>
+      <div class="form-group">
+        <label>Upload Design Reference Image</label>
+        <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="1.5" style="margin:0 auto;display:block"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          <p>Click to upload your design photo (JPG, PNG)</p>
+          <input type="file" id="fileInput" accept="image/*" style="display:none" onchange="fileChosen(this)"/>
+          <p id="fileLabel" style="color:var(--rose);font-size:12px;margin-top:4px"></p>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-primary" style="width:100%;padding:15px;font-size:14px">Submit Order Request</button>
+      </div>
+      <div id="formSuccess">
+        <p style="color:var(--rose-d);font-family:'Cormorant Garamond',serif;font-size:20px">✦ Order Received!</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:6px">We will confirm your order on WhatsApp within 24 hours.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ══ CONTACT — CHANGE: address, phones, email, hours, maps URL ══ -->
+<section id="contact" class="section">
+  <div class="section-header">
+    <span class="section-tag">Get In Touch</span>
+    <h2 class="section-title">Find Us in <em>Hosur</em></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <!-- CHANGE: your full address -->
+      <div class="contact-block">
+        <h4>📍 Shop Address</h4>
+        <p>Vini's Boutique,<br/>No.5/785, Pasumai Nagar,<br/>KCC Nagar,<br/><strong>Hosur — 635 109</strong>, Tamil Nadu</p>
+      </div>
+      <!-- CHANGE: your phone numbers and WhatsApp number -->
+      <div class="contact-block">
+        <h4>📞 Call / WhatsApp</h4>
+        <p>
+          <a href="tel:+919566334850">+91 95663 34850</a><br/>
+          <a href="tel:+919789417850">+91 97894 17850</a> (Alternate)
+        </p>
+        <a class="wa-button" href="https://wa.me/919566334850?text=Hi%20I'm%20interested%20in%20stitching%20at%20Vini's%20Boutique" target="_blank" style="margin-top:14px;display:inline-flex">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Open WhatsApp Chat
+        </a>
+      </div>
+      <!-- CHANGE: your business hours -->
+      <div class="contact-block">
+        <h4>🕐 Business Hours</h4>
+        <p>Monday – Saturday: <strong>9:00 AM – 8:00 PM</strong><br/>Sunday: <strong>10:00 AM – 2:00 PM</strong><br/><em style="font-size:12px">Appointment recommended for bridal orders</em></p>
+      </div>
+      <!-- CHANGE: your email -->
+      <div class="contact-block">
+        <h4>📧 Email Us</h4>
+        <p><a href="mailto:viniboutiques1@gmail.com">viniboutiques1@gmail.com</a></p>
+      </div>
+    </div>
+    <!-- GOOGLE MAPS:
+         1. Go to maps.google.com
+         2. Search your shop address
+         3. Click Share > Embed a map > Copy iframe
+         4. Replace the entire <iframe ...> tag below with your copied iframe -->
+    <div class="map-frame">
+      <iframe src="https://maps.google.com/maps?q=PasumaiNagar,
+KCC Nagar,Hosur,Tamil+Nadu,India&output=embed&hl=en" title="Shop Location" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER — CHANGE: shop name, year, social links ══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Vini's <span>Boutique</span></div>  <!-- CHANGE -->
+      <p class="footer-desc">Hosur's finest women's tailoring — handcrafting blouses, Aari work, and embroidery with love since 2020. Every stitch, a labour of art.</p>  <!-- CHANGE -->
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Blouse Stitching</a></li>
+        <li><a href="#services">Aari Work</a></li>
+        <li><a href="#services">Embroidery</a></li>
+        <li><a href="#services">Saree Work</a></li>
+        <li><a href="#services">Bridal Wear</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#order">Book Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <ul>
+        <!-- CHANGE: your social media links -->
+        <li><a href="https://wa.me/919566334850" target="_blank">WhatsApp</a></li>
+        <li><a href="https://instagram.com/vini_fashion_style" target="_blank">Instagram</a></li>
+        <!-- <li><a href="https://facebook.com/Vinisboutique" target="_blank">Facebook</a></li> -->
+        <li><a href="mailto:viniboutiques1@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Vini's Boutique, . All rights reserved.</p>  <!-- CHANGE year -->
+    <p style="color:rgba(255,255,255,0.3)">Made with ♥ in Hosur, Tamil Nadu</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

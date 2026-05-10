@@ -1,0 +1,16 @@
+PUT YOUR GALLERY PHOTOS IN THIS FOLDER
+=======================================
+
+File names to use (must match exactly):
+  aari-work-1.jpg     ← Your Aari work photo
+  blouse-1.jpg        ← Your blouse stitching photo
+  embroidery-1.jpg    ← Your embroidery work photo
+  saree-work-1.jpg    ← Your saree work photo
+  bridal-1.jpg        ← Your bridal wear photo
+  churidar-1.jpg      ← Your churidar/kurti photo
+
+Tips:
+  - Best size: 800 x 600 pixels or bigger
+  - Use JPG format for photos (smaller file size)
+  - Keep each photo under 1MB for fast loading
+  - Square or landscape photos look best in the gallery

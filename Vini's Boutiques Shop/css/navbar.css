@@ -1,0 +1,105 @@
+/* ════════════════════════════════════════
+   navbar.css — Top navigation bar
+   ════════════════════════════════════════ */
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(253,247,240,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  transition: height 0.3s, box-shadow 0.3s;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--rose-d);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--rose); }
+
+.nav-cta {
+  background: var(--rose);
+  color: #fff;
+  padding: 9px 22px;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--rose-d); }
+
+/* ── HAMBURGER (mobile) ────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.hamburger span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--ink);
+  display: block;
+}
+
+/* ── MOBILE MENU ────────────────────── */
+.mobile-menu {
+  position: fixed;
+  top: 68px; left: 0; right: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateY(-120%);
+  transition: transform 0.3s;
+  z-index: 99;
+}
+.mobile-menu.open { transform: translateY(0); }
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ── RESPONSIVE ─────────────────────── */
+@media (max-width: 860px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+}

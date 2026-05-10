@@ -1,0 +1,13 @@
+PUT YOUR HERO / BANNER PHOTOS IN THIS FOLDER
+============================================
+
+File names to use:
+  aari-hero.jpg     ← Aari work close-up photo (tall panel)
+  blouse-hero.jpg   ← Blouse photo
+  emb-hero.jpg      ← Embroidery photo
+
+Tips:
+  - These appear in the big 3-panel grid on the homepage
+  - Minimum 600 x 800 pixels, portrait orientation
+  - JPG format recommended
+  - Close-up shots of your work look stunning here

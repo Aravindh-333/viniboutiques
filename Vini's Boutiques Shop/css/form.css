@@ -1,0 +1,159 @@
+/* ════════════════════════════════════════
+   form.css — Order booking form section
+   ════════════════════════════════════════ */
+
+.order-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── LEFT SIDE: How it works ─────────── */
+.order-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.order-info-box {
+  padding: 36px;
+  background: var(--gold-l);
+  border-left: 4px solid var(--gold);
+}
+.order-info-box h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  color: var(--rose-d);
+  margin-bottom: 8px;
+}
+.order-info-box > p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.order-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.order-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--rose);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── WhatsApp Quick Box ──────────────── */
+.quick-wa-box {
+  padding: 28px;
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+.quick-wa-box h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--rose-d);
+  margin-bottom: 8px;
+}
+.quick-wa-box p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ── RIGHT SIDE: Form ────────────────── */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 11px 14px;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--rose); }
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ── FILE UPLOAD BOX ─────────────────── */
+.file-upload {
+  border: 1.5px dashed var(--border);
+  padding: 22px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--white);
+  transition: border-color 0.2s;
+}
+.file-upload:hover { border-color: var(--rose); }
+.file-upload p { font-size: 13px; color: var(--muted); }
+.file-label-text { color: var(--rose); font-size: 12px; margin-top: 6px; }
+
+/* ── SUCCESS MESSAGE ─────────────────── */
+.form-success {
+  text-align: center;
+  padding: 20px;
+  background: var(--rose-l);
+  border: 1px solid var(--rose);
+  margin-top: 8px;
+}
+.success-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--rose-d);
+}
+.success-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ── RESPONSIVE ─────────────────────── */
+@media (max-width: 860px) {
+  .order-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .form-row   { grid-template-columns: 1fr; }
+}

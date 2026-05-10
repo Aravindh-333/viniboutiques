@@ -1,0 +1,11 @@
+PUT YOUR SHOP / OWNER PHOTO IN THIS FOLDER
+==========================================
+
+File name to use:
+  owner.jpg     ← Your photo or shop front photo
+
+Tips:
+  - Portrait orientation works best (taller than wide)
+  - Minimum 600 x 800 pixels
+  - JPG format recommended
+  - This photo appears in the "About" section of the website
