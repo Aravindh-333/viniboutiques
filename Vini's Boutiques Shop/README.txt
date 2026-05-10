@@ -1,5 +1,5 @@
 =========================================================
-  PRIYA'S BOUTIQUE — WEBSITE FOLDER GUIDE
+VINI'S BOUTIQUE — WEBSITE FOLDER GUIDE
   Read this first before editing anything!
 =========================================================
 
