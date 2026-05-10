@@ -71,7 +71,7 @@ YOUR WHATSAPP NUMBER:
   Example: 919876543210 → 919443001234
 
 YOUR SHOP NAME:
-  Search "Priya's Boutique" → Replace with your shop name
+  Search "Vini's Boutique" → Replace with your shop name
 
 YOUR PRICES:
   Search "From ₹350" → Change to your actual prices
